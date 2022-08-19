@@ -4,6 +4,7 @@ import random
 root = tk.Tk()
 root.resizable(False, False)
 root.title("Blad, Steen, Schaar")
+root.iconphoto(True, tk.PhotoImage(file='/usr/share/bss/icon.png'))
 
 window_width = 600
 window_height = 500
@@ -22,9 +23,9 @@ root.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
 q_frame = tk.Frame(root)
 r_frame = tk.Frame(root)
 
-img_blad = tk.PhotoImage(file = "blad.png")
-img_steen = tk.PhotoImage(file = "steen.png")
-img_schaar = tk.PhotoImage(file = "schaar.png")
+img_blad = tk.PhotoImage(file = "/usr/share/bss/blad.png")
+img_steen = tk.PhotoImage(file = "/usr/share/bss/steen.png")
+img_schaar = tk.PhotoImage(file = "/usr/share/bss/schaar.png")
 
 spel_stats = {
 	"aantal": 0,
